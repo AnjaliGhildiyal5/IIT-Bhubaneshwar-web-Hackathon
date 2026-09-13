@@ -42,84 +42,52 @@ QuestForge follows a simple RPG-inspired productivity system:
 
 ##  Application Workflow
 
-```mermaid
-flowchart TD
-    A[User Opens QuestForge] --> B[Sign Up / Login]
-    B --> C[Dashboard]
 
-    C --> D{Choose Action}
+### But there's one important thing
 
-    D --> E[Create Quest]
-    E --> F[Add Description]
-    F --> G[Select Difficulty]
-    G --> H[Quest Saved to Supabase]
+The **very last ` ``` ` after the description should NOT be there**.
 
-    H --> I[View Active Quests]
-    I --> J{Complete Quest?}
+So your actual README should end like this:
 
-    J -->|No| I
-    J -->|Yes| K[Mark Quest Completed]
-    K --> L[Calculate XP]
-    L --> M[Update User Progress]
-    M --> N[Check Level Progress]
-    N --> O[Level Up]
-
-    C --> P[Use Stopwatch]
-    C --> Q[Use Countdown Timer]
-
-    I --> R[Delete Quest]
-    R --> H
-
-    H --> S[(Supabase PostgreSQL)]
+```markdown
+    H --> S[("MongoDB")]
     M --> S
-
-The goal is to make productivity more engaging by turning real-world activities into game-like challenges.
 
 ---
 ```
+The goal is to make productivity more engaging by turning real-world activities into game-like challenges.
+
+
 ## Tech Stack
-
-<p align="center">
-
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-
-  <br>
-
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-
-  <br>
-
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-
-</p>
-##  Tech Stack
 
 ### Frontend
 
-- React
-- Vite
-- JavaScript
-- CSS
-- React Router
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+</p>
 
 ### Backend
 
-- Node.js
-- Express.js
-- REST API
-- CORS
+<p>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+</p>
 
-### Database & Authentication
+### Database
 
-- Supabase
-- Supabase Authentication
-- PostgreSQL
+<p>
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+</p>
+
+### Deployment & Version Control
+
+<p>
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+</p>
 
 ### Deployment
 
