@@ -76,6 +76,7 @@ flowchart TD
 The goal is to make productivity more engaging by turning real-world activities into game-like challenges.
 
 ---
+```
 ## Tech Stack
 
 <p align="center">
