@@ -42,17 +42,43 @@ QuestForge follows a simple RPG-inspired productivity system:
 
 ##  Application Workflow
 
+## How QuestForge Works
 
-### But there's one important thing
+QuestForge follows a simple RPG-inspired productivity system.
 
-The **very last ` ``` ` after the description should NOT be there**.
+```mermaid
+flowchart TD
+    A["Open QuestForge"] --> B["Sign Up / Login"]
+    B --> C["Dashboard"]
 
-So your actual README should end like this:
+    C --> D{"Choose Action"}
 
-```markdown
+    D --> E["Create Quest"]
+    E --> F["Add Description"]
+    F --> G["Choose Difficulty"]
+    G --> H["Save Quest"]
+
+    H --> I["View Active Quests"]
+    I --> J{"Complete Quest?"}
+
+    J -->|No| I
+    J -->|Yes| K["Mark Quest Completed"]
+    K --> L["Earn XP"]
+    L --> M["Update Progress"]
+    M --> N{"Level Up?"}
+
+    N -->|Yes| O["Level Up"]
+    N -->|No| I
+    O --> I
+
+    C --> P["Stopwatch"]
+    C --> Q["Countdown Timer"]
+
+    I --> R["Delete Quest"]
+    R --> I
+
     H --> S[("MongoDB")]
     M --> S
-
 ---
 ```
 The goal is to make productivity more engaging by turning real-world activities into game-like challenges.
