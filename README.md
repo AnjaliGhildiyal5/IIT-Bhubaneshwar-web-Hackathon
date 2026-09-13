@@ -155,4 +155,4 @@ IIT-HACKATHON/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Mohit-web8516/IIT-HACKATHON.git
+git clone [https://github.com/AnjaliGhildiyal5/IIT-Bhubaneshwar-web-Hackathon)]
