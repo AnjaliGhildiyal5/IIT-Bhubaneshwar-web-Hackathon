@@ -79,7 +79,6 @@ flowchart TD
 
     H --> S[("MongoDB")]
     M --> S
----
 ```
 The goal is to make productivity more engaging by turning real-world activities into game-like challenges.
 
@@ -148,6 +147,7 @@ IIT-HACKATHON/
 │
 ├── .gitignore
 └── README.md
+```
 ---
 
 ##  Local Installation
